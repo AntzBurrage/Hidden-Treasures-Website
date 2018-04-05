@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Antiques, Student, Anthony Burrage, Hidden Treasures">
+  <meta name="description" content="Hidden Treasures - Student Website Project">
+  <meta name="author" content="Anthony Burrage">
+  <title>Hidden Treasures - Style Sheet</title>
+
+  <!-- Bootstrap/CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/lightbox.min.css" rel="stylesheet">
+  <link href="css/datatables.min.css" rel="stylesheet">
+  <link href="css/styling.css" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Cookies -->
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"/>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function(){
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#333355",
+            "text": "#f6f6f6"
+          },
+          "button": {
+            "background": "#b1a275",
+            "text": "#333131"
+          }
+        },
+        "theme": "classic"
+      })});
+    </script>
+  </head>
+
+  <body>
+
+    <!-- To Top Button -->
+
+    <button class="btn btn-default btn-lg" title="Top of Page" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></button>
+
+
+    <!-- Navigation -->
+
+    <div id="Navigation" class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only"> Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html" title="Hidden Treasures">Hidden Treasures <i class="fa fa-key" aria-hidden="true"></i></a> 
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="catalogue.html">Catalogue</a></li>
+              <li><a href="advice.html">Antique Advice</a></li>
+              <li><a href="dealers.html">Dealers</a></li>
+              <li><a href="events.html">Events/Shows</a></li>
+              <li><a href="about.html">About Us/Contact</a></li>
+              <li><a href="checkout.html">Checkout<i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>  
+        </div> <!-- End Row -->
+      </div> <!-- End Container -->
+    </div> <!-- End Navigation -->
+
+    <!-- Content -->
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1><b>Hidden Treasures - Style Sheet</b></h1>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+          <p>For the purposes of this assignment a styling sheet was documented. Below are the various stylings and features (with explanations where necessary) required.</p>
+        </div>
+      </div> <!-- End Row -->
+
+      <br>
+
+      <div class="page-header">
+        <h1><b>Fonts</b></h1>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <h1>Hidden Treasures - A,B,C, 1,2,3, @,?,$</h1><br>
+          <h4>The above font is known as <b>&quot;Aquifer&quot;</b> and is the <b>&quot;Server Based Font&quot;</b>.</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <h2>Hidden Treasures - A,B,C, 1,2,3, @,?,$</h2><br>
+          <h4>The above font is known as <b>&quot;Roboto&quot;</b> and is the <b>&quot;Google Based Font&quot;</b>.</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <h3>Hidden Treasures - A,B,C, 1,2,3, @,?,$</h3><br>
+          <h4>The above font is known as <b>&quot;Brush Script MT&quot;</b> and is the <b>&quot;OS Based Font&quot;</b>.</h4>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="page-header">
+        <h1><b>HTML/CSS Validation</b></h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <p>The following is the Validation results for &quot;Hidden Treasures&quot;. Click into any image for a closer inspection.</p><br>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <a href="images/indexval.jpg" data-lightbox="Validation" class="thumbnail">
+              <img src="images/indexval.jpg" alt="Index">
+            </a>
+            <p class="text-center bandcap"><b>Index.html Validation</b></p>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <a href="images/catalogueval.jpg" data-lightbox="Validation" class="thumbnail">
+              <img src="images/catalogueval.jpg" alt="Catalogue">
+            </a>
+            <p class="text-center bandcap"><b>Catalogue.html Validation</b></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <a href="images/adviceval.jpg" data-lightbox="Validation" class="thumbnail">
+              <img src="images/adviceval.jpg" alt="Advice">
+            </a>
+            <p class="text-center bandcap"><b>Advice.html Validation</b></p>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <a href="images/dealersval.jpg" data-lightbox="Validation" class="thumbnail">
+              <img src="images/dealersval.jpg" alt="Dealers">
+            </a>
+            <p class="text-center bandcap"><b>Dealers.html Validation</b></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <a href="images/eventsval.jpg" data-lightbox="Validation" class="thumbnail">
+              <img src="images/eventsval.jpg" alt="Events">
+            </a>
+            <p class="text-center bandcap"><b>Events.html Validation</b></p>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <a href="images/aboutval.jpg" data-lightbox="Validation" class="thumbnail">
+              <img src="images/aboutval.jpg" alt="About">
+            </a>
+            <p class="text-center bandcap"><b>About.html Validation</b></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <a href="images/checkoutval.jpg" data-lightbox="Validation" class="thumbnail">
+              <img src="images/checkoutval.jpg" alt="Checkout">
+            </a>
+            <p class="text-center bandcap"><b>checkout.html Validation</b></p>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <a href="images/styleval.jpg" data-lightbox="Validation" class="thumbnail">
+              <img src="images/styleval.jpg" alt="Style">
+            </a>
+            <p class="text-center bandcap"><b>Styling.html Validation</b></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <a href="images/css1.jpg" data-lightbox="Validation" class="thumbnail">
+              <img src="images/css1.jpg" alt="Custom">
+            </a>
+            <p class="text-center bandcap"><b>Custom.css Validation</b></p>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <a href="images/css2.jpg" data-lightbox="Validation" class="thumbnail">
+              <img src="images/css2.jpg" alt="Stylingcss">
+            </a>
+            <p class="text-center bandcap"><b>Styling.css Validation</b></p>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="page-header">
+        <h1><b>Colour Theory</b></h1>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="thumbnail">
+            <img src="images/normal.jpg" alt="Normal">
+          </div>
+          <p class="text-center bandcap"><b>Base Pallet</b></p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="thumbnail">
+            <img src="images/deuteranopia.jpg" alt="Deuteranopia">
+          </div>
+          <p class="text-center bandcap"><b>Blindness Test - Deuteranopia</b></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="thumbnail">
+            <img src="images/protanopia.jpg" alt="Protanopia">
+          </div>
+          <p class="text-center bandcap"><b>Blindness Test - Protanopia</b></p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="thumbnail">
+            <img src="images/tritanopia.jpg" alt="Tritanopia">
+          </div>
+          <p class="text-center bandcap"><b>Blindness Test - Tritanopia</b></p>
+        </div>
+      </div>
+
+      <h4><b>Use of Colours</b></h4>
+      <p>Using a color scheme web application called <b>COOLORS</b> the following colour scheme was chosen. During research it was found that the majority of Antique Websites went for the old fashioned and dated themes. The Logic of colour use within &quot;Hidden Treasures&quot; was to try for a more modern, lively but not tacky aesthetic. The Following were the Colours Choose as noted above and where they were implemented.</p>
+      <ul>
+        <li><b>#C9CDD9(Languid Lavender) -</b> This was used as the Body colour.</li><br>
+        <li><b>#454564(Independence) -</b> This was used as the Navigation and Footer base colour.</li><br>
+        <li><b>#333131(Jet) -</b> This was used as base colour for all Links, Captions, Paragraphs and Headings within the Body.</li><br>
+        <li><b>#F6F6F6(White Smoke) -</b> This was used as the Navigation and Footer Anchors and Links.</li><br>
+        <li><b>#B1A275(Pale Taupe) -</b> This was used to indicate that a Link is currently active, backgrounds and some buttons.</li><br>
+        <li><b>#CEB210(Lemon Curry) -</b> This was used to indicate that a Link is currently active</li><br>
+      </ul>
+      <p>There isn’t any concern for legibility using this colour scheme as the correct use of contrast and layout will ensure users with <b>Deuteranopia</b>, <b>Protanopia</b>, <b>Tritanopia</b> or other conditions can navigate and enjoy their visit to &quot;Hidden Treasures&quot;.</p>
+
+      <br>
+
+      <div class="page-header">
+        <h1><b>Video/Audio</b></h1>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <video class="thumbnail" poster="images/advice2.jpg" style= "max-height: 245px" controls>
+            <source src="media/SpongebobLaugh.mp4" type="video/mp4">
+              <source src="media/SpongebobLaugh.avi" type="video/avi">
+                Your browser does not support HTML5 video.
+              </video> 
+              <h4><b>Video Example</b></h4>      
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="thumbnail">
+                <img src="images/advice2.jpg" alt="Audio" style= "max-height: 245px">
+              </div>
+              <audio style="width: 100%;" controls>
+                <source src="media/SpongebobLaugh.mp3" type="audio/mpeg">
+                  <source src="media/SpongebobLaugh.ogg" type="audio/ogg">
+                    Your browser does not support HTML5 audio.
+                    Go get a better one!
+                  </audio>  
+                  <h4><b>Audio Example</b></h4>       
+                </div>
+              </div>
+
+              <br>
+
+              <div class="page-header">
+                <h1><b>SVG/Canvas/Raster Images</b></h1>
+              </div>
+
+              <div class="row">
+
+                <!-- SVG Image -->
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                  <img src="images/bugs.svg" width="400px" height="400px" alt="SVG">
+                  <br>
+                  <h4 class="text-center"><b>SVG Image</b></h4>
+                </div>
+
+                <!-- Canvas Image -->
+                <div class="col-sm-4 col-md-4 col-lg-4">      
+                  <canvas id="myCanvas" width= "300px" height="300px" alt="Canvas"></canvas>
+                  <script>
+                    var canvas = document.getElementById('myCanvas');
+                    var context = canvas.getContext('2d');
+                    var imageObj = new Image();
+
+                    imageObj.onload = function() {
+                      context.drawImage(imageObj, 10, 20);
+                    };
+                    imageObj.src = 'images/treasures.jpg';
+                  </script>
+                  <br><br><br><br><br><br>
+                  <h4 class="text-center"><b>Canvas Image</b></h4>
+                </div>
+
+                <!-- Raster Image -->
+                <div class="col-sm-4 col-md-4 col-lg-4"><br>
+                  <div class="thumbnail">
+                    <img src="images/director.jpg" alt="Raster">
+                  </div>
+                  <br>
+                  <h4 class="text-center"><b>Raster Image</b></h4>
+                </div>
+              </div> <!-- End Row -->
+
+              <br>
+
+              <p><b>Note:</b> It is known that online graphics/media have copyrights placed on them. All images within the &quot;Hidden Treasures&quot; Website have been extracted from various external sources (See the &quot;Validation and Sources&quot; Section in the Report Link below for more detail). This was done solely for the use of educational purposes and will not be used for commercial use.</p>
+
+              <br>
+
+              <div class="page-header">
+                <h1><b>The Report</b></h1>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <p><a href="media/Web_Dev_8_Page_Design_(Assignment_3).pdf"><b style="color: #b1a275">Click Here</b></a> for the full report of the &quot;Hidden Treasures&quot; Antique Website.</p>
+                </div>
+              </div>
+
+              <br>
+
+              <div class="page-header"></div>
+
+            </div> <!-- End Container -->
+
+            <br>
+            <br>
+
+            <!-- Footer -->
+
+            <div class="navbar navbar-footer navbar-static-bottom" role="navigation">
+              <div class="container">
+                <div class="navbar-text pull-left">
+                  <h5>Designer: Anthony Burrage &emsp;&emsp; &copy; 2017 Hidden Treasures <i class="fa fa-key" aria-hidden="true"></i></h5>
+                  <h5>Contact Our Office: (021) 492 4310 (Open 10am-6pm) or <a href="about.html" title="Contact Us" style="color: #b1a275">Contact Form</a></h5><br>
+                  <a href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook-square fa-3x"></i></a>
+                  <a href="https://twitter.com/" title="Twitter"><i class="fa fa-twitter-square fa-3x"></i></a>
+                  <a href="https://www.instagram.com/" title="Instagram"><i class="fa fa-instagram fa-3x"></i></a>
+                  <a href="https://www.youtube.com/" title="YouTube"><i class="fa fa-youtube-square fa-3x"></i></a>
+                  <a href="https://ie.linkedin.com/" title="Linkedin"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                </div>
+                <div class="navbar-text pull-right">
+                  <section class="wrapper">
+                    <div id="navigation">
+                      <ul id="navlist">
+                        <h5>Site Map</h5>
+                        <li><a href="index.html" title="Home">Home</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="events.html" title="Events/Shows">Events/Shows</a></li>
+                        <li><a href="catalogue.html" title="Catalogue">Catalogue</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="about.html" title="About/Contact">About Us/Contact</a></li>
+                        <li><a href="advice.html" title="Antique Advice">Antique Advice</a>&emsp;&emsp;&emsp;<a href="checkout.html" title="Checkout">Checkout</a></li>
+                        <li><a href="dealers.html" title="Dealers">Dealers</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="#" title="Style Sheet">Style Sheet</a></li>
+                      </ul>
+                    </div>
+                  </section>
+                </div>
+              </div> <!-- End Container -->
+            </div> <!-- End Footer -->
+
+            <!-- jQuery/JavaScript -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/lightbox.min.js"></script>
+            <script src="js/jquery-3.2.1.min.js"></script>
+            <script src="js/datatables.min.js"></script>
+            <script src="js/custom.js"></script>
+
+            <script>window.onscroll = function() { scrollFunction();}</script>
+
+          </body> <!-- End Body -->
+</html> <!-- End HTML -->

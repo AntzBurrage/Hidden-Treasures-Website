@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Antiques, Student, Anthony Burrage, Hidden Treasures">
+  <meta name="description" content="Hidden Treasures - Student Website Project">
+  <meta name="author" content="Anthony Burrage">
+  <title>Hidden Treasures - Home</title>
+
+  <!-- Bootstrap/CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/lightbox.min.css" rel="stylesheet">
+  <link href="css/datatables.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Cookies -->
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"/>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function(){
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#333355",
+            "text": "#f6f6f6"
+          },
+          "button": {
+            "background": "#b1a275",
+            "text": "#333131"
+          }
+        },
+        "theme": "classic"
+      })});
+    </script>
+  </head>
+
+  <body>
+
+    <!-- To Top Button -->
+
+    <button class="btn btn-default btn-lg" title="Top of Page" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></button>
+
+    <!-- Navigation -->
+
+    <div id="Navigation" class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only"> Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html" title="Hidden Treasures">Hidden Treasures <i class="fa fa-key" aria-hidden="true"></i></a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="catalogue.html">Catalogue</a></li>
+              <li><a href="advice.html">Antique Advice</a></li>
+              <li><a href="dealers.html">Dealers</a></li>
+              <li><a href="events.html">Events/Shows</a></li>
+              <li><a href="about.html">About Us/Contact</a></li>
+              <li><a href="checkout.html">Checkout<i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>  
+        </div> <!-- End Row -->
+      </div> <!-- End Container -->
+    </div> <!-- End Navigation -->
+
+    <!-- Content -->
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div id= "sliderhome" class="carousel slide" data-interval="5000" data-ride="carousel" data-wrap="true" data pause="hover">
+
+            <ol class="carousel-indicators">
+              <li data-target="#sliderhome" data-slide-to="0" class="active"></li>
+              <li data-target="#sliderhome" data-slide-to="1"></li>
+              <li data-target="#sliderhome" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+              <div class="item active" style="max-height: 490px;">
+                <img id="sliderimg" src="images/treasures.jpg" alt="Treasures">
+                <div class="carousel-caption">
+                  <h1>Hidden Treasures <i class="fa fa-key" aria-hidden="true"></i></h1>
+                  <h5>Welcome To Hidden Treasures-We Find The Missing Piece Of Your History!</h5>
+                </div>
+              </div>
+
+              <div class="item" style="max-height: 490px;">
+                <img id="sliderimg" src="images/teaset.jpg" alt="Tea-set">
+                <div class="carousel-caption">
+                  <h1>Hidden Treasures <i class="fa fa-key" aria-hidden="true"></i></h1>
+                  <h5>Welcome To Hidden Treasures-We Find The Missing Piece Of Your History!</h5>
+                </div>
+              </div>
+
+              <div class="item" style="max-height: 490px;">
+                <img id="sliderimg" src="images/morocco-private-desert.jpg" alt="Morocco Private Desert">
+                <div class="carousel-caption">
+                  <h1>Hidden Treasures <i class="fa fa-key" aria-hidden="true"></i></h1>
+                  <h5>Welcome To Hidden Treasures-We Find The Missing Piece Of Your History!</h5>
+                </div>
+              </div>
+            </div>
+
+            <a class="left carousel-control" href="#sliderhome" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </a>
+            <a class="right carousel-control" href="#sliderhome" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+
+          </div> <!-- End Slider -->
+        </div> <!-- End Columns-->
+
+      </div> <!-- End Row -->
+
+      <div class="page-header"></div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+          <h3><b>Welcome To Hidden Treasures <i class="fa fa-key" aria-hidden="true"></i></b></h3>
+          <p>Hidden Treasures is renowned as a leading antique supplier in Ireland/UK. Our goal is to set the standard for trading in the antiques business in Ireland, and to establish and maintain confidence between its members and the public in buying and selling. We have established relationships with numerous dealers, from all four provinces, representing the finest art, furniture, silver, jewellery, clocks, glassware, collectables, notes & coins, and more!</p>
+        </div>
+      </div> <!-- End Row -->
+
+      <div class="page-header"></div>
+
+      <br>
+
+      <!-- Button Links -->
+
+      <div id="homepagebtns" class="row">
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+          <a href="catalogue.html" title="Catalogue" class="thumbnail" style="max-height: 200px;">
+            <img src="images/chest2.jpg" alt="Catalogue">
+          </a>
+          <h4><b>Catalogue</b></h4>
+          <p>Browse our vast Catalogue of finest art, silver, jewellery, clocks, glassware, collectables, and more!</p>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+          <a href="dealers.html" title="Dealers" class="thumbnail" style="max-height: 200px;">
+            <img src="images/dealers.jpg" alt="Dealers">
+          </a>
+          <h4><b>Dealers</b></h4>
+          <p>Our partnered dealers specialise in all areas of antiques bringing our clients the best advice and experience available.</p>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+          <a href="advice.html" title="Antique Advice" class="thumbnail" style="max-height: 200px;">
+            <img src="images/advice.jpg" alt="Advice">
+          </a>
+          <h4><b>Advice</b></h4>
+          <p>If you are a first timer to the world of antiques come find expert advice from our experienced specialists.</p>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+          <a href="events.html" title="Events/Shows" class="thumbnail" style="max-height: 200px;">
+            <img src="images/show.jpg" alt="Events">
+          </a>
+          <h4><b>Events</b></h4>
+          <p>Come check out our up to date schedule of all upcoming antique events in your area all around Ireland.</p>
+        </div>
+      </div> <!-- End Row -->
+
+      <div class="page-header"></div>
+
+    </div> <!-- End Container -->
+
+    <br>
+    <br>
+
+    <!-- Footer -->
+
+    <div class="navbar navbar-footer navbar-static-bottom" role="navigation">
+      <div class="container">
+        <div class="navbar-text pull-left">
+         <h5>Designer: Anthony Burrage &emsp;&emsp; &copy; 2017 Hidden Treasures <i class="fa fa-key" aria-hidden="true"></i></h5>
+         <h5>Contact Our Office: (021) 492 4310 (Open 10am-6pm) or <a href="about.html" title="Contact Us" style="color: #b1a275">Contact Form</a></h5><br>
+         <a href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook-square fa-3x"></i></a>
+         <a href="https://twitter.com/" title="Twitter"><i class="fa fa-twitter-square fa-3x"></i></a>
+         <a href="https://www.instagram.com/" title="Instagram"><i class="fa fa-instagram fa-3x"></i></a>
+         <a href="https://www.youtube.com/" title="YouTube"><i class="fa fa-youtube-square fa-3x"></i></a>
+         <a href="https://ie.linkedin.com/" title="Linkedin"><i class="fa fa-linkedin-square fa-3x"></i></a>
+       </div>
+       <div class="navbar-text pull-right">
+        <section class="wrapper">
+          <div id="navigation">
+            <ul id="navlist">
+              <h5>Site Map</h5>
+              <li><a href="#" title="Home">Home</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="events.html" title="Events/Shows">Events/Shows</a></li>
+              <li><a href="catalogue.html" title="Catalogue">Catalogue</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="about.html" title="About/Contact">About Us/Contact</a></li>
+              <li><a href="advice.html" title="Antique Advice">Antique Advice</a>&emsp;&emsp;&emsp;<a href="checkout.html" title="Checkout">Checkout</a></li>
+              <li><a href="dealers.html" title="Dealers">Dealers</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="styling.html" title="Style Sheet">Style Sheet</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div> <!-- End Container -->
+  </div> <!-- End Footer -->
+
+
+  <!-- jQuery/JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/datatables.min.js"></script>
+  <script src="js/custom.js"></script>
+
+  <script>window.onscroll = function() { scrollFunction();}</script>
+
+</body> <!-- End Body -->
+</html> <!-- End HTML -->

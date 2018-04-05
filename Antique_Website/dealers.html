@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Antiques, Student, Anthony Burrage, Hidden Treasures">
+  <meta name="description" content="Hidden Treasures - Student Website Project">
+  <meta name="author" content="Anthony Burrage">
+  <title>Hidden Treasures - Dealers</title>
+
+  <!-- Bootstrap/CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/lightbox.min.css" rel="stylesheet">
+  <link href="css/datatables.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Cookies -->
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"/>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function(){
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#333355",
+            "text": "#f6f6f6"
+          },
+          "button": {
+            "background": "#b1a275",
+            "text": "#333131"
+          }
+        },
+        "theme": "classic"
+      })});
+    </script>
+  </head>
+
+  <body>
+
+    <!-- To Top Button -->
+
+    <button class="btn btn-default btn-lg" title="Top of Page" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></button>
+
+    <!-- Navigation -->
+
+    <div id="Navigation" class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only"> Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html" title="Hidden Treasures">Hidden Treasures <i class="fa fa-key" aria-hidden="true"></i></a> 
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="catalogue.html">Catalogue</a></li>
+              <li><a href="advice.html">Antique Advice</a></li>
+              <li class="active"><a href="#">Dealers</a></li>
+              <li><a href="events.html">Events/Shows</a></li>
+              <li><a href="about.html">About Us/Contact</a></li>
+              <li><a href="checkout.html">Checkout<i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>  
+        </div> <!-- End Row -->
+      </div> <!-- End Container -->
+    </div> <!-- End Navigation -->
+
+    <!-- Content -->
+
+    <div class="container">
+
+      <div class="page-header">
+        <h2><b>Hidden Treasures - Dealers/Partners</b></h2>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+          <p>Here at Hidden Treasures we pride ourselves with only working with the best and most professional Antique Dealers in Ireland/UK. Since the founding of Hidden Treasure we have built numourous relationships from all over the country. Each one specialising in various areas of antiques bringing our clients the best advice and experience available. Visit one of our partners below and they will be more than happy to help and provide further information on our catalogue.</p>
+        </div>
+      </div> <!-- End Row -->
+
+      <br>
+      <br>
+
+      <!-- Table -->
+
+      <div class="container">
+
+        <table class="col-xs-12 col-sm-6 col-md-6 col-lg-6 table table-striped table-bordered table-hover" id="mydata">
+
+         <thead>
+          <tr>
+            <th>Dealer</th>
+            <th>Location</th>
+            <th>Speciality</th>
+            <th>Contact Number</th>
+            <th>Visit Us</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr><td>Cobwebs</td><td>Galway</td><td>Jewellery</td><td>091-564388</td><td><a class="btn btn-primary btn-block" href="http://www.cobwebs.ie/">Visit Us</a></td></tr>
+          <tr><td>Courtville Antiques</td><td>Dublin</td><td>Jewellery</td><td>01-6794042</td><td><a class="btn btn-primary btn-block" href="http://www.courtvilleantiques.com/">Visit Us</a></td></tr>
+          <tr><td>Connaught Antiques</td><td>Dublin</td><td>Figurines</td><td>01-6794042</td><td><a class="btn btn-primary btn-block" href="http://www.courtvilleantiques.com/">Visit Us</a></td></tr>
+          <tr><td>Daly Antique Services</td><td>Dublin</td><td>Restoration</td><td>01-4516086</td><td><a class="btn btn-primary btn-block" href="http://www.dalyantiqueservices.com/">Visit Us</a></td></tr>
+          <tr><td>Danker Antiques</td><td>Dublin</td><td>Silver</td><td>01-6774009</td><td><a class="btn btn-primary btn-block" href="https://www.dankerantiques.com/">Visit Us</a></td></tr>
+          <tr><td>De Burca Rare Books</td><td>Dublin</td><td>Books</td><td>01-2886960</td><td><a class="btn btn-primary btn-block" href="http://www.deburcararebooks.com/">Visit Us</a></td></tr>
+          <tr><td>Donegal Antiques & Art Gallery</td><td>Donegal</td><td>Glass</td><td>074-9739885</td><td><a class="btn btn-primary btn-block" href="http://www.donegalantiques.com/">Visit Us</a></td></tr>
+          <tr><td>Greystone Antiques</td><td>Wicklow</td><td>Antiques</td><td>01-2875862</td><td><a class="btn btn-primary btn-block" href="https://greystonesantiques.com/">Visit Us</a></td></tr>
+          <tr><td>Hibernian Notes and Coins</td><td>Dublin</td><td>Coins</td><td>028-90313013</td><td><a class="btn btn-primary btn-block" href="http://www.hiberniancoinsandnotes.com/">Visit Us</a></td></tr>
+          <tr><td>Brereton Jewellers</td><td>Antrim</td><td>Watches</td><td>01-8726759</td><td><a class="btn btn-primary btn-block" href="https://www.brereton.ie/">Visit Us</a></td></tr>
+          <tr><td>John Farrington Antiques</td><td>Dublin</td><td>Mirrors</td><td>01-6791899</td><td><a class="btn btn-primary btn-block" href="http://www.johnfarringtonantiques.com/">Visit Us</a></td></tr>
+          <tr><td>L & W Duvallier</td><td>London</td><td>Silver</td><td>087-2535313</td><td><a class="btn btn-primary btn-block" href="http://www.antiqueirishsilver.com/">Visit Us</a></td></tr>
+          <tr><td>McManus Jewellers</td><td>Cork</td><td>Porcelain</td><td>086-2545322</td><td><a class="btn btn-primary btn-block" href="http://www.mcmanusjewellers.com/">Visit Us</a></td></tr>
+          <tr><td>Neptune Gallery</td><td>Cork</td><td>Maps/Prints</td><td>01-2822139</td><td><a class="btn btn-primary btn-block" href="https://www.neptune.com/ie?gclid=EAIaIQobChMIvJmNjrPQ1wIVr53tCh3kFwsfEAAYASAAEgK4QfD_BwE">Visit Us</a></td></tr>
+          <tr><td>Stacpoole Antiques</td><td>Limerick</td><td>Maps</td><td>061-396409</td><td><a class="btn btn-primary btn-block" href="https://www.facebook.com/stacpooles/">Visit Us</a></td></tr>
+          <tr><td>Tempo Antiques</td><td>Galway</td><td>Jewellery</td><td>091 562282</td><td><a class="btn btn-primary btn-block" href="http://www.tempoantiques.com/">Visit Us</a></td></tr>
+          <tr><td>Timepiece Clocks</td><td>Dublin</td><td>Clocks</td><td>01-4540774</td><td><a class="btn btn-primary btn-block" href="http://www.timepieceantiqueclocks.com/">Visit Us</a></td></tr>
+          <tr><td>Treasures</td><td>West Meath</td><td>Fine Art</td><td>0906475762</td><td><a class="btn btn-primary btn-block" href="http://www.treasuresirishart.com/">Visit Us</a></td></tr>
+          <tr><td>Vanessa Parker and Roger Grimes</td><td>Mayo</td><td>Books</td><td>087-2339221</td><td><a class="btn btn-primary btn-block" href="http://www.vanessaparkerrarebooks.com/">Visit Us</a></td></tr>
+          <tr><td>Whitley Gallery</td><td>Wicklow</td><td>Prints</td><td>01-8726759</td><td><a class="btn btn-primary btn-block" href="http://www.thewhitleyartgallery.com/Home.aspx">Visit Us</a></td></tr>
+        </tbody>
+      </table> <!-- End Table -->
+
+    </div>
+
+    <div class="page-header"></div>
+
+  </div> <!-- End Container -->
+
+  <br>
+  <br>
+
+  <!-- Footer -->
+
+  <div class="navbar navbar-footer navbar-static-bottom" role="navigation">
+    <div class="container">
+      <div class="navbar-text pull-left">
+        <h5>Designer: Anthony Burrage &emsp;&emsp; &copy; 2017 Hidden Treasures <i class="fa fa-key" aria-hidden="true"></i></h5>
+        <h5>Contact Our Office: (021) 492 4310 (Open 10am-6pm) or <a href="about.html" title="Contact Us" style="color: #b1a275">Contact Form</a></h5><br>
+        <a href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook-square fa-3x"></i></a>
+        <a href="https://twitter.com/" title="Twitter"><i class="fa fa-twitter-square fa-3x"></i></a>
+        <a href="https://www.instagram.com/" title="Instagram"><i class="fa fa-instagram fa-3x"></i></a>
+        <a href="https://www.youtube.com/" title="YouTube"><i class="fa fa-youtube-square fa-3x"></i></a>
+        <a href="https://ie.linkedin.com/" title="Linkedin"><i class="fa fa-linkedin-square fa-3x"></i></a>
+      </div>
+      <div class="navbar-text pull-right">
+        <section class="wrapper">
+          <div id="navigation">
+            <ul id="navlist">
+              <h5>Site Map</h5>
+              <li><a href="index.html" title="Home">Home</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="events.html" title="Events/Shows">Events/Shows</a></li>
+              <li><a href="catalogue.html" title="Catalogue">Catalogue</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="about.html" title="About/Contact">About Us/Contact</a></li>
+              <li><a href="advice.html" title="Antique Advice">Antique Advice</a>&emsp;&emsp;&emsp;<a href="checkout.html" title="Checkout">Checkout</a></li>
+              <li><a href="#" title="Dealers">Dealers</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="styling.html" title="Style Sheet">Style Sheet</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div> <!-- End Container -->
+  </div> <!-- End Footer -->
+
+
+  <!-- jQuery/JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/datatables.min.js"></script>
+  <script src="js/custom.js"></script>
+
+  <script>window.onscroll = function() { scrollFunction();}</script>
+
+</body> <!-- End Body -->
+</html> <!-- End HTML -->

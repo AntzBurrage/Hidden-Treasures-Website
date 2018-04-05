@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Antiques, Student, Anthony Burrage, Hidden Treasures">
+  <meta name="description" content="Hidden Treasures - Student Website Project">
+  <meta name="author" content="Anthony Burrage">
+  <title>Hidden Treasures - Checkout</title>
+
+  <!-- Bootstrap/CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/lightbox.min.css" rel="stylesheet">
+  <link href="css/datatables.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Cookies -->
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"/>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function(){
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#333355",
+            "text": "#f6f6f6"
+          },
+          "button": {
+            "background": "#b1a275",
+            "text": "#333131"
+          }
+        },
+        "theme": "classic"
+      })});
+    </script>
+  </head>
+
+  <body>
+
+    <!-- To Top Button -->
+
+    <button class="btn btn-default btn-lg" title="Top of Page" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></button>
+
+    <!-- Navigation -->
+
+    <div id="Navigation" class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only"> Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html" title="Hidden Treasures">Hidden Treasures <i class="fa fa-key" aria-hidden="true"></i></a> 
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="catalogue.html">Catalogue</a></li>
+              <li><a href="advice.html">Antique Advice</a></li>
+              <li><a href="dealers.html">Dealers</a></li>
+              <li><a href="events.html">Events/Shows</a></li>
+              <li><a href="about.html">About Us/Contact</a></li>
+              <li class="active"><a href="#">Checkout<i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>  
+        </div> <!-- End Row -->
+      </div> <!-- End Container -->
+    </div> <!-- End Navigation -->
+
+    <!-- Content -->
+
+    <div class="container">
+      <!-- Section Headings -->
+
+      <div class="row form-group">
+        <div class="col-xs-12">
+          <ul class="nav nav-pills nav-justified thumbnail setup-panel">
+            <li class="active"><a href="#step-1">
+              <h4 class="list-group-item-heading">Details</h4>
+              <p class="list-group-item-text"></p>
+            </a></li>
+            <li class="disabled"><a href="#step-2">
+              <h4 class="list-group-item-heading">Confirmation</h4>
+              <p class="list-group-item-text"></p>
+            </a></li>
+            <li class="disabled"><a href="#step-3">
+              <h4 class="list-group-item-heading">Complete</h4>
+              <p class="list-group-item-text"></p>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contact/Postage Details -->
+      <div class="row setup-content" id="step-1">
+        <div class="col-xs-12">
+          <div class="col-md-12 well text-center">
+            <h1>Contact/Postage Details</h1>
+            <form id="ChkForm" autocomplete='on'>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <label for="dlist">Title:</label>
+                  <select class="form-control" id="dlist">
+                    <option>Mr.</option>
+                    <option>Mrs.</option>
+                    <option>Miss</option>
+                  </select>
+                </div>
+                <div class='col-md-6 form-group'>  
+                  <label for='name2'>Name:</label>
+                  <input type='text' name='name2' class='form-control' id='name2' placeholder='Full Name' required>
+                </div>
+              </div>
+              <div class="row">
+                <div class='col-md-6 form-group'>  
+                  <label for='email2'>Email Address:</label> 
+                  <input type='email' name='email2' class='form-control' id='email2' placeholder='xxxx@email.com' required>
+                </div>   
+                <div class='col-md-6 form-group'>
+                  <label for='telephone2'>Telephone:</label>
+                  <input type='tel' name='telephone2' class='form-control' id='telephone2' placeholder='Phone Number'>
+                </div>
+              </div>
+              <div class="row">
+                <div class='col-md-6 form-group'>  
+                  <label for='address'>Address:</label>
+                  <input type='text' name='address' class='form-control' id='address' placeholder='Address 1, Address 2, Address 3' required>
+                </div>
+                <div class="col-md-6 form-group">
+                  <label for="dlist2">County</label>
+                  <select class="form-control" id="dlist2">
+                    <option>Choose a County</option>
+                    <optgroup label="Rep of Ireland">
+                      <option>Carlow</option><option>Cavan</option><option>Clare</option><option>Cork</option><option>Derry</option><option>Donegal</option><option>Dublin</option><option>Galway</option><option>Kerry</option><option>Kildare</option><option>Kilkenny</option><option>Laois</option><option>Leitrim</option><option>Limerick</option><option>Longford</option><option>Louth</option><option>Mayo</option><option>Meath</option><option>Monaghan</option><option>Offaly</option><option>Roscommon</option><option>Sligo</option><option>Tipperary</option><option>Waterford</option><option>WestMeath</option><option>Wexford</option><option>Wicklow</option>
+                    </optgroup>
+                    <optgroup label="England">
+                      <option>Bedfordshire</option><option>Berkshire</option><option>Bristol</option><option>Buckinghamshire</option><option>Cambridgeshire</option><option>Cheshire</option><option>City of London</option><option>Cornwall</option><option>Cumbria</option><option>Derbyshire</option><option>Devon</option><option>Dorset</option><option>Durham</option> <option>East Riding of Yorkshire</option><option>East Sussex</option><option>Essex</option><option>Gloucestershire</option><option>Greater London</option><option>Greater Manchester</option><option>Hampshire</option><option>Herefordshire</option><option>Hertfordshire</option><option>Isle of Wight</option><option>Kent</option><option>Lancashire</option><option>Leicestershire</option><option>Lincolnshire</option><option>Merseyside</option><option>Norfolk</option><option>North Yorkshire</option><option>Northamptonshire</option><option>Northumberland</option><option>Nottinghamshire</option><option>Oxfordshire</option><option>Rutland</option><option>Shropshire</option><option>Somerset</option><option>South Yorkshire</option><option>Staffordshire</option><option>Suffolk</option><option>Surrey</option><option>Tyne and Wear</option><option>Warwickshire</option><option>West Midlands</option><option>West Sussex</option><option>West Yorkshire</option><option>Wiltshire</option><option>Worcestershire</option>
+                    </optgroup>
+                    <optgroup label="Wales">
+                      <option>Anglesey</option><option>Brecknockshire</option><option>Caernarfonshire</option><option>Carmarthenshire</option><option>Cardiganshire</option><option>Denbighshire</option><option>Flintshire</option><option>Glamorgan</option><option>Merioneth</option><option>Monmouthshire</option><option>Montgomeryshire</option><option>Pembrokeshire</option><option>Radnorshire</option>
+                    </optgroup>
+                    <optgroup label="Scotland">
+                      <option>Aberdeenshire</option><option>Angus</option><option>Argyllshire</option><option>Ayrshire</option><option>Banffshire</option><option>Berwickshire</option><option>Buteshire</option><option>Cromartyshire</option><option>Caithness</option><option>Clackmannanshire</option><option>Dumfriesshire</option><option>Dunbartonshire</option><option>East Lothian</option><option>Fife</option><option>Inverness-shire</option><option>Kincardineshire</option><option>Kinross</option><option>Kirkcudbrightshire</option><option>Lanarkshire</option><option>Midlothian</option><option>Morayshire</option><option>Nairnshire</option><option>Orkney</option><option>Peeblesshire</option><option>Perthshire</option><option>Renfrewshire</option><option>Ross-shire</option><option>Roxburghshire</option><option>Selkirkshire</option><option>Shetland</option><option>Stirlingshire</option><option>Sutherland</option><option>West Lothian</option><option>Wigtownshire</option>
+                    </optgroup>
+                    <optgroup label="Northern Ireland"><option>Antrim</option><option>Armagh</option><option>Down</option><option>Fermanagh</option><option>Londonderry</option><option>Tyrone</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <label for="dlist3">Country:</label>
+                  <select class="form-control" id="dlist3">
+                    <option>Choose a County</option>
+                    <option>England</option>
+                    <option>Northern Ireland</option>
+                    <option>Rep of Ireland</option>
+                    <option>Scotland</option>
+                    <option>Wales</option>
+                  </select>
+                </div>
+                <div class='col-md-6 form-group'>  
+                  <label for='postcode'>Post Code:</label>
+                  <input type='text' name='postcode' class='form-control' id='postcode' placeholder='xxx xxxx'>
+                </div>
+              </div>
+
+
+              <br>
+              <h1>Payment Details</h1>
+
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <label for="dlist4">Card Type:</label>
+                  <select class="form-control" id="dlist4">
+                    <option>Choose a Card Type</option>
+                    <option>Visa</option>
+                    <option>MasterCard</option>
+                    <option>American Express</option>
+                    <option>Discover</option>
+                  </select>
+                </div>
+                <div class='col-md-6 form-group'>  
+                  <label for='cardnum'>Card Number:</label>
+                  <input type='text' name='cardnum' class='form-control' id='cardnum' placeholder='xxxx-xxxx-xxxx-xxxx'>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class='col-md-4 form-group'>  
+                  <label for='cardnum'>Card CVV:</label>
+                  <input type='text' name='cardcvv' class='form-control' id='cardcvv' placeholder='xxx'>
+                </div>
+
+                <div class="col-md-4 form-group">
+                  <label for="dlist5">Expiry Month:</label>
+                  <select class="form-control" id="dlist5">
+                    <option>Expiry Month</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                  </select>
+                </div>
+
+                <div class="col-md-4 form-group">
+                  <label for="dlist6">Expiry Year:</label>
+                  <select class="form-control" id="dlist6">
+                    <option>Expiry Year</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                  </select>
+                </div>
+              </div>
+
+              <br>
+              <h1>Delivery Type</h1>
+
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="dlist7">Delivery Type:</label>
+                  <select class="form-control" id="dlist7">
+                    <option>Delivery Type</option>
+                    <option>First Class Delivery (£14.99)</option>
+                    <option>Standard Delivery (£5.99)</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="dlist8">Insurance (£10.00):</label>
+                  <select class="form-control" id="dlist8">
+                    <option>Insurance</option>
+                    <option>Yes Please</option>
+                    <option>No Thank You</option>
+                  </select>
+                </div>
+              </div>
+              <br>
+            </form>
+            <br>
+            <button type="submit" id="activate-step-2" class="btn btn-primary btn-lg" onclick="storecheckout()" form='ChkForm'><h4><b>Confirmation</b></h4></button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row setup-content" id="step-2">
+        <div class="col-xs-12">
+          <div class="col-md-12 well">
+            <h1 class="text-center">Confirmation</h1>
+            <h4 class="text-center">Before We Place Your Order Please Confirm Your Shipping Details Are Correct</h4><br><br>
+
+            <div class="col-md-6">
+              <h4><b>Billing Address</b></h4>
+
+              <h4><b>Name:</b> John Smith</h4><br>
+              <h4><b>Address:</b></h4>
+              <h4>Smithtown South,</h4>
+              <h4>Middle Road,</h4>
+              <h4>Dublin 4</h4><br>
+              <h4><b>County:</b> Dublin</h4>
+              <h4><b>Post Code:</b> P23 P432</h4>
+              <h4><b>Country:</b> Rep of Ireland</h4>
+
+            </div>
+
+            <div class="col-md-6">
+              <h4><b>Item(s):</b></h4>
+              <h4>x1 - Antique Victorian Solid Silver Fob Pocket Watch & Key Working 1889</h4>
+              <h4>x1 - Antique Fattorini & Sons Silver Pocket Watch. Waltham Movement 1880</h4><br>
+              <h4><b>Item(s) Total: </b> £xx.xx</h4>
+              <h4><b>Payment Type: </b> Visa</h4>
+              <h4><b>Delivery Type: </b> Standard (£xx.xx)</h4>
+              <h4><b>Insurance: </b> Yes Please</h4><br>
+              <h4><b>Sum Total: </b> £xx.xx</h4><br>
+
+
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center"><button id="activate-step-3" onclick="storecheckout()" class="btn btn-primary btn-lg"><h4><b>Place Order</b></h4></button></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row setup-content" id="step-3">
+        <div class="col-xs-12">
+          <div class="col-md-12 well text-center">
+            <h1 class="text-center">Confirmation Statement</h1>
+            <h3>Congratulations Your Order Has Been Placed!</h3><br>
+            <h3><b>Reference Number: </b> 123456789</h3><br>
+            <h4>A Confirmation Email Will Be Sent To You With Your Tracking Number and Expected Arrival Date.</h4>
+            <h4>Thank You From All of Us at Hidden Treaures <i class="fa fa-key" aria-hidden="true"></i></h4>
+            <br><br><br>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header"></div>
+
+    </div> <!-- End Container -->
+
+    <br>
+    <br>
+
+    <!-- Footer -->
+
+    <div class="navbar navbar-footer navbar-static-bottom" role="navigation">
+      <div class="container">
+        <div class="navbar-text pull-left">
+          <h5>Designer: Anthony Burrage &emsp;&emsp; &copy; 2017 Hidden Treasures <i class="fa fa-key" aria-hidden="true"></i></h5>
+          <h5>Contact Our Office: (021) 492 4310 (Open 10am-6pm) or <a href="about.html" title="Contact Us" style="color: #b1a275">Contact Form</a></h5><br>
+          <a href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook-square fa-3x"></i></a>
+          <a href="https://twitter.com/" title="Twitter"><i class="fa fa-twitter-square fa-3x"></i></a>
+          <a href="https://www.instagram.com/" title="Instagram"><i class="fa fa-instagram fa-3x"></i></a>
+          <a href="https://www.youtube.com/" title="YouTube"><i class="fa fa-youtube-square fa-3x"></i></a>
+          <a href="https://ie.linkedin.com/" title="Linkedin"><i class="fa fa-linkedin-square fa-3x"></i></a>
+        </div>
+        <div class="navbar-text pull-right">
+          <section class="wrapper">
+            <div id="navigation">
+              <ul id="navlist">
+                <h5>Site Map</h5>
+                <li><a href="index.html" title="Home">Home</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="events.html" title="Events/Shows">Events/Shows</a></li>
+                <li><a href="catalogue.html" title="Catalogue">Catalogue</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="about.html" title="About/Contact">About Us/Contact</a></li>
+                <li><a href="advice.html" title="Antique Advice">Antique Advice</a>&emsp;&emsp;&emsp;<a href="#" title="Checkout">Checkout</a></li>
+                <li><a href="dealers.html" title="Dealers">Dealers</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="styling.html" title="Style Sheet">Style Sheet</a></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div> <!-- End Container -->
+    </div> <!-- End Footer -->
+
+
+    <!-- jQuery/JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/datatables.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>window.onscroll = function() { scrollFunction();}</script>
+
+  </body> <!-- End Body -->
+</html> <!-- End HTML -->
